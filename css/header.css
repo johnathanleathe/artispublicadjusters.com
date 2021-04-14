@@ -1,6 +1,6 @@
 #header {
     background-color: black;
-    min-height: 100px;
+    min-height: 120px;
 
 }
 
@@ -21,10 +21,21 @@
 }
 
 #navbar {
+    display: block;
+    position: relative;
+    left: 0;
+    right: 0;
+}
+
+#navbar_left {
+    float: left;
+}
+
+#navbar_right {
     float: right;
 }
 
-ul {
+#navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 20px 0 0 0;
@@ -41,10 +52,13 @@ ul {
 #navbar li a.sfHover,
 #navbar li a:hover {
     border-bottom: 2px solid white;
+    border-top: 2px solid white;
+
 }
 
 #navbar li a.active {
     border-bottom: 2px solid white;
+    border-top: 2px solid white;
 }
 
 #navbar li a {
@@ -56,8 +70,41 @@ ul {
     font-family: 'open_sansregular';
 }
 
-#navbar li a:hover {
-    background-color:rgb(82, 82, 82)
+#header_center {
+    float: left;
+    margin: auto;
+    padding: 40px 0 0 0;
+    text-align: center;
+    width: 300px;
+    height: 180px;
+    background: #000;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 9;
+}
+
+#header .wrap {
+    position: relative;
+    overflow: visible;
+    width: auto !important;
+    max-width: 1150px;
+    text-align: center;
+}
+
+.main-logo {
+    padding: 0;
+    margin: 0;
+}
+
+.widget-area {
+    border-top: 0px solid #DDDDDD;
+    border-bottom: 0px solid #DDDDDD;
+    border-left: 0px solid #DDDDDD;
+    border-right: 0px solid #DDDDDD;
+    color: #000000;
+    font-size: 16px;
+    font-family: 'open_sansregular';
 }
 
 .dropbtn {
@@ -91,7 +138,6 @@ ul {
 
 .dropdown-content a:hover {
     background-color: rgb(78, 78, 78);
-    border-bottom: 2px solid white;
 }
 
 .dropdown:hover .dropdown-content {display:block;}
