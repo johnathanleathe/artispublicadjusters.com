@@ -18,6 +18,12 @@ body {
     clear: both;
 }
 
-#navbar {
-    
+#main-section {
+    min-height: 480px;
+    background-color: darkgrey;
+}
+
+#second-section {
+    min-height: 480px;
+    background-color: rgb(119, 30, 30);
 }
