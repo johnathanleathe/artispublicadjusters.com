@@ -12,6 +12,7 @@ body {
     background: #ffffff;
     font-size: 16px;
     line-height: 1.7;
+    font-family: 'Roboto', sans-serif;
 }
 
 #wrap {
@@ -27,15 +28,12 @@ body {
 
 #main-section {
     min-height: 480px;
-    background-color: darkgrey;
+    background-color: white;
 }
 
 #second-section {
     min-height: 480px;
     background-color: rgb(119, 30, 30);
-}
-
-.main-logo {
 }
 
 #main-section h1 {
@@ -46,7 +44,7 @@ body {
     left 200px;
     padding-left: 150px;
     font-family: 'Roboto', sans-serif;
-    color: white;
+    color: rgb(43, 43, 43);
 }
 
 #main-section h3 {
@@ -57,5 +55,13 @@ body {
     left 200px;
     padding-left: 150px;
     font-family: 'Roboto', sans-serif;
-    color: white;
+    color: rgb(43, 43, 43);
+}
+
+.public-blue {
+    color: rgb(0,174,239);
+}
+
+.wrap {
+    width: 100%;
 }
