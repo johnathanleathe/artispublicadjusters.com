@@ -2,7 +2,8 @@
     background-color: white;
     min-height: 120px;
     padding-top: 40px;
-    height: 120px;
+    height: 220px;
+    overflow: visible;
 }
 
 #top-div {
@@ -10,18 +11,25 @@
     top: 0;
     height: 40px;
     width: 100%;
-    background-color: white;
+    background-color: gray;
 
 }
 
 #header .wrap {
     margin: 0 auto;
     float: none;
-    overflow: hidden;
-    position: relative;
     overflow: visible;
+    position: relative;
     width: auto !important;
     max-width: 1150px;
+}
+
+#navbar-wrap {
+    width: 100%;
+    text-align: center;
+    overflow: visible;
+    margin: auto;
+    display: inline-block;
 }
 
 .nav-link {
@@ -29,48 +37,39 @@
     text-decoration: none;
 }
 
-#navbar {
-    display: block;
-    position: relative;
-    left: 0;
-    right: 0;
-    float: none;
-    margin: auto;
-    width: 500px;
+#navbar-wrap ul {
     text-align: center;
-}
-
-#navbar ul {
-    list-style-type: none;
-    margin: auto;
     padding: 0;
-    background-color: white;
+    margin: 0;
     font-family: 'Roboto', sans-serif;
-    left: 0;
-    right: 0;
-    position: relative;
-    width: 500px;
+    overflow: visible;
+}
+
+.navbar-wrap {
+    width: 100%;
     text-align: center;
+    display: inline-block;
 }
 
-#navbar li {
-    float: left;
+#navbar-wrap li {
+    display: inline-block;
     font-family: 'Roboto', sans-serif;
-    padding: 14px 16px;
+    /* padding: 14px 16px; */
     font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#navbar li a.sfHover,
-#navbar li a:hover {
+#navbar-wrap li a.sfHover,
+#navbar-wrap li a:hover {
+    background-color: lightgrey;
+}
+
+#navbar-wrap li a.active {
     border-bottom: 2px solid black;
-
 }
 
-#navbar li a.active {
-    border-bottom: 2px solid black;
-}
-
-#navbar li a {
+#navbar-wrap li a {
     display: block;
     color: black;
     text-align: center;
@@ -92,9 +91,8 @@
 
 #header .wrap {
     position: relative;
-    overflow: hidden;
-    width: auto !important;
-    max-width: 1150px;
+    overflow: visible;
+    width: 100%;
     text-align: center;
     padding: 0;
 }
@@ -114,7 +112,7 @@
     margin: auto;
     background-color: white;
     overflow: hidden;
-    height: 100px;
+    height: 150px;
     width: 200px;
     left: 0;
     right: 0;
@@ -122,15 +120,15 @@
 }
 
 .main-logo img {
-    height: 50px;
+    height: 80px;
     width: auto;
-    padding: 0;
+    padding: 0 0 5px 0;
     margin: 10px 0 0 0;
 }
 
 .under-artis-logo {
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     color: black;
     padding: 0;
@@ -179,9 +177,9 @@
 }
 
 .dropdown-content a:hover {
-    background-color: rgb(189, 189, 189);
+    background-color: lightgray;
 }
 
 .dropdown:hover .dropdown-content {display:block;}
 
-.dropdown:hover .dropbtn {background-color: rgb(189, 189, 189);}
+.dropdown:hover .dropbtn {background-color: lightgray;}

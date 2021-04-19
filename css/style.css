@@ -1,15 +1,42 @@
-/* @media screen and (max-width:479px) {
+#main-section h1 {
+    text-align: center;
+    letter-spacing: .8px;
+    margin: 50px auto 0 auto;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(43, 43, 43);
+    padding: 0 10px 0 10px;
+}
+
+#main-section h3 {
+    padding: 0 10px 0 10px;
+    margin: 50px auto 0 auto;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 24px;
+    margin: 10px auto 10px auto;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(43, 43, 43);
+}
+
+@media screen and (max-width:479px) {
     #main-section h3,
     #main-section h1 {
-     font-size:25px
-    }
-*/
+    font-size: 24px;
+}
+}
+
+@media screen and (min-width: 480px) {
+    #main-section h3,
+    #main-section h1 {
+    font-size: 50px;
+}
+}
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'open_sansregular';
-    background: #ffffff;
+    background-color: #ffffff;
     font-size: 16px;
     line-height: 1.7;
     font-family: 'Roboto', sans-serif;
@@ -29,6 +56,10 @@ body {
 #main-section {
     min-height: 480px;
     background-color: white;
+    text-align: center;
+    display: block;
+    margin: auto;
+    padding: 50px 0 50px 0;
 }
 
 #second-section {
@@ -36,27 +67,7 @@ body {
     background-color: rgb(119, 30, 30);
 }
 
-#main-section h1 {
-    font-size: 42px;
-    letter-spacing: .8px;
-    position: absolute;
-    top: 300px;
-    left 200px;
-    padding-left: 150px;
-    font-family: 'Roboto', sans-serif;
-    color: rgb(43, 43, 43);
-}
 
-#main-section h3 {
-    padding-top: 10px;
-    font-size: 2vw;
-    position: absolute;
-    top: 370px;
-    left 200px;
-    padding-left: 150px;
-    font-family: 'Roboto', sans-serif;
-    color: rgb(43, 43, 43);
-}
 
 .public-blue {
     color: rgb(0,174,239);
