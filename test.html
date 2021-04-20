@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+
+    <body>
+
+        <div id='myText'></div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.17.0/core.min.js"></script>
+
+        <script>
+            
+            // Code here
+            var text = document.getElementById('myText');
+
+            var typewriter = new Typewriter(text, {
+                loop: true
+            });
+
+            typewriter.typeString('Hello World')
+            .pauseFor(2500)
+            .start();
+
+        </script>
+
+    </body>
+</html>

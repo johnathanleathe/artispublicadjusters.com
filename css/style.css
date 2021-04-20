@@ -1,19 +1,15 @@
 #main-section h1 {
-    text-align: center;
+    text-align: left;
     letter-spacing: .8px;
-    margin: 50px auto 0 auto;
     font-family: 'Roboto', sans-serif;
     color: rgb(43, 43, 43);
-    padding: 0 10px 0 10px;
+    padding: 0 10px 0 0;
+    font-size: 48px;
 }
 
 #main-section h3 {
-    padding: 0 10px 0 10px;
-    margin: 50px auto 0 auto;
-    padding-top: 10px;
-    text-align: center;
-    font-size: 24px;
-    margin: 10px auto 10px auto;
+    text-align: left;
+    font-size: 40px;
     font-family: 'Roboto', sans-serif;
     color: rgb(43, 43, 43);
 }
@@ -25,12 +21,12 @@
 }
 }
 
-@media screen and (min-width: 480px) {
+/* @media screen and (min-width: 480px) {
     #main-section h3,
     #main-section h1 {
     font-size: 50px;
 }
-}
+} */
 
 body {
     margin: 0;
@@ -40,6 +36,10 @@ body {
     font-size: 16px;
     line-height: 1.7;
     font-family: 'Roboto', sans-serif;
+}
+
+#myText {
+    color: rgb(83, 83, 94);
 }
 
 #wrap {
@@ -55,16 +55,17 @@ body {
 
 #main-section {
     min-height: 480px;
+    width: 100%;
     background-color: white;
-    text-align: center;
-    display: block;
+    text-align: left;
     margin: auto;
-    padding: 50px 0 50px 0;
+    padding: 50px 100px 50px 100px;
 }
 
 #second-section {
     min-height: 480px;
     background-color: rgb(119, 30, 30);
+    color: black;
 }
 
 

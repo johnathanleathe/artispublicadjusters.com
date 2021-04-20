@@ -16,9 +16,12 @@
 <!-- Body -->
 <body>
 
+
+
 <!-- Entire page wrap -->
 <div id="wrap">
 
+    <!-- Above header bar for telephone number and contact info -->
     <div id="top-div">
         
     </div>
@@ -45,7 +48,7 @@
                 </div>
             </div>
         
-
+            
 
             <div id="navbar-wrap">
                 <!-- Navigation Bar -->
@@ -58,7 +61,8 @@
                                 <a href="about.html">About Us</a>
                             </li>
                             <li>
-                                <a href="#" class="">Reviews</a>
+                                <a href="https://www.google.com/search?q=artis+public+adjusters&source=hp&ei=TC5_YIKHG5mxtQbVt4SAAw&gs_ssp=eJzj4tVP1zc0zKgyTzE1ySo2YLRSNaiwsDBIMzA3TUtMM0xJtrQwtzKoME02NE5NMjRJNEwzNTMzTvISSywqySxWKChNyslMVkhMySotLkktKgYAa40X-A&oq=artis+public&gs_lcp=ChFtb2JpbGUtZ3dzLXdpei1ocBABGAAyCwguEMcBEK8BEJMCMgYIABAWEB4yCAgAEBYQChAeMgYIABAWEB4yBggAEBYQHjIFCCEQoAE6CAgAEOoCEI8BOggIABCxAxCDAToICC4QsQMQgwE6BQgAELEDOgsILhCxAxDHARCjAjoICC4QsQMQkwI6BQguELEDOgIIADoICC4QxwEQowI6CAguEMcBEK8BOgcIABCxAxAKOgQIABAKUOkYWLw-YPlnaAFwAHgAgAF-iAHkB5IBBDExLjGYAQCgAQGwAQ8&sclient=mobile-gws-wiz-hp#lrd=0x880f075faf1dc987:0x5c13eb14a1f5663b,1,,,&wptab=s:H4sIAAAAAAAAAONgVuLVT9c3NMyoMk8xNckqfsTozS3w8sc9YSmnSWtOXmO04eIKzsgvd80rySypFNLjYoOyVLgEpVB1ajBI8XOhCvHsYuL3yU9OzAnIzwxKLctMLS9exGqYWFSSWaxQUJqUk5mskJiSVVpcklpUrKOQmZesp5CUk5-fm5mXnpKYk6pQBNEDAFezD7GlAAAA
+                                " class="">Reviews</a>
                             </li>
                             <li class="dropdown">
                                 <div class="dropbtn">Services</div>
@@ -79,15 +83,55 @@
 
     <!-- Main Page Section -->
     <div id="main-section">
+        
+
+        <!-- Inner text with Typewriter animation -->
         <div>
             <img src='' class="main-section" width=100%>
-            <h1><a class='public-blue'>Public</a> stands for <a class='public-blue'>policyholders</a>.</h1>
-            <h3>We settle property claims on behalf of <a class='public-blue'>policyholders</a>.</h3>
+            <h3>We <a id="myText"></a>insurance claims for <br>home and business owners.</h3>
         </div>
     </div>
 
+
+
+
+
+<!-- Typewriter JS for main section text -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.17.0/core.min.js"></script>
+
+<script>
+    
+    // Code here
+    var text = document.getElementById('myText');
+
+    var typewriter = new Typewriter(text, {
+        loop: true
+    });
+
+    typewriter.typeString('investigate')
+        .pauseFor(1500)
+        .deleteAll()
+        .typeString('document')
+        .pauseFor(1500)
+        .deleteAll()
+        .typeString('prepare')
+        .pauseFor(1500)
+        .deleteAll()
+        .typeString('negotiate')
+        .pauseFor(1500)
+        .deleteAll()
+        .typeString('settle')
+        .pauseFor(1500)
+        .start();
+
+
+</script>
+
     <!-- Second Section -->
     <div id="second-section">
+
+
 
     </div>
 <!-- End entire page wrap -->
