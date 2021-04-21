@@ -15,11 +15,11 @@ h1 {
 
 #main-section h3 {
     font-size: 40px;
-    position: relative;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: rgb(43, 43, 43);
-    text-shadow:1px 1px rgb(148, 147, 147);
+    text-shadow:2px 2px rgb(148, 147, 147);
+    top: 50%;
 }
 
 
@@ -35,7 +35,7 @@ body {
 
 #myText {
     color: rgb(0,174,239);
-    text-shadow:1px 1px rgb(121, 120, 120);
+    text-shadow:2px 2px rgb(121, 120, 120);
 
 }
 
@@ -51,11 +51,11 @@ body {
 }
 
 #main-section {
-    min-height: 480px;
+    min-height: 350px;
     width: 100%;
     background-color: white;
     margin: auto;
-    padding: 150px 0 0 0;
+    padding: 50px 0 0 0;
     display: block;
 }
 
