@@ -59,9 +59,9 @@ body {
     display: block;
 }
 
-#second-section {
+#services-section {
     min-height: 480px;
-    background-color: rgb(48, 47, 47);
+    background-color: white;
     color: black;
     width: 100%;
     padding-top: 50px;
@@ -83,18 +83,50 @@ body {
 
 .column {
     flex-basis: 100%;
-    background-color: grey;
+    background-color: white;
     height: 150px;
     margin: 10px;
-    align-self: middle;
 }
 
-#second-section h1 {
+.column-image {
+    height: 100px;
+    width: 100px;
+    border: black solid 1px;
+    position: relative;
+    margin: auto;
+}
+
+.column-title {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+
+}
+
+.services-button {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+#services-section .column h3 {
+    font-size: 16px;
+}
+
+#services-section h1 {
     color: black;
     font-weight: bold;
     margin: auto;
     font-size: 60px;
     padding: 50px 0 50px 0;
+}
+
+#what-is-a-public-adjuster-section {
+    height: 400px;
+    width: 100%;
+    background-color:rgb(218, 214, 214);
+    text-align: center;
 }
 
 .public-blue {

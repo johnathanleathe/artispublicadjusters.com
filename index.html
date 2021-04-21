@@ -89,95 +89,88 @@
         <div> 
             <h3>We <a id="myText"></a>insurance claims for <br>home and business owners.</h3>
         </div>
-    </div>
-
-
-
-
-
+    
+        
         <!-- Typewriter JS for main section text -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.17.0/core.min.js"></script>
 
         <script>
             
-            // Code here
+            // Create variable from element from the document
             var text = document.getElementById('myText');
 
+            // Loop through Typewriter script
             var typewriter = new Typewriter(text, {
                 loop: true
             });
 
+            //Type different services offered for claims with Typewriter script
             typewriter.typeString('investigate')
-                .pauseFor(1500)
+                .pauseFor(1000)
                 .deleteAll()
                 .typeString('document')
-                .pauseFor(1500)
+                .pauseFor(1000)
                 .deleteAll()
                 .typeString('prepare')
-                .pauseFor(1500)
+                .pauseFor(1000)
                 .deleteAll()
                 .typeString('negotiate')
-                .pauseFor(1500)
+                .pauseFor(1000)
                 .deleteAll()
                 .typeString('settle')
-                .pauseFor(1500)
+                .pauseFor(1000)
                 .start();
 
 
         </script>
+    
+    </div>
 
-    <!-- Second Section -->
-    <div id="second-section">
+    <!-- What is a Public Adjuster Section -->
+    <div id='what-is-a-public-adjuster-section'>
+        <h1>What is a <a class='public-blue'>Public</a> Adjuster?</h1>
+    </div>
+
+
+    <!-- Services Section -->
+    <div id="services-section">
+        
+        <!-- Wrap Flex Box for Services buttons -->
         <div id="button-wrap-div">
+            
+            <!-- Flex Row -->
             <div class="row">
 
+                <!-- Buttons for Services -->
                 <div class="column">
 
-
+                    <!-- Anchor tag acts as button with link -->
+                    <a class='services-button' href='#'>
+                        <!-- Image above title -->
+                        <div class="column-image"></div>
+                        <!-- Button title -->
+                        <div class="column-title"><h3>Commercial Claims</h3></div>
+                    </a>
                 </div>
 
                 <div class="column">
-
-                    
+                    <div class="column-image"></div>
+                    <div class="column-title"><h3>Residential Claims</h3></div>
                 </div>
 
                 <div class="column">
-
-
+                    <div class="column-image"></div>
+                    <div class="column-title"><h3>Insurance Appraisal & Umpire Services</h3></div>
                 </div>
 
                 <div class="column">
-
-                    
+                    <div class="column-image"></div>
+                    <div class="column-title"><h3>Claims Consulting for Professionals</h3></div>                    
                 </div>
-
 
             </div>
-            <div class="row">
-
-                <div class="column">
-
-
-                </div>
-
-                <div class="column">
-
-                    
-                </div>
-
-                <div class="column">
-
-
-                </div>
-
-                <div class="column">
-
-                    
-                </div>
-
-
-            </div>
+    
         </div>   
     </div>
 <!-- End entire page wrap -->
