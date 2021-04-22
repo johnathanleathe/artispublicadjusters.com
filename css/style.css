@@ -59,6 +59,30 @@ body {
     display: block;
 }
 
+#services-section .column h3 {
+    font-size: 16px;
+}
+
+#services-section h1 {
+    color: black;
+    font-weight: bold;
+    margin: auto;
+    font-size: 60px;
+    padding: 50px 0 50px 0;
+}
+
+#what-is-a-public-adjuster-section {
+    height: 400px;
+    width: 100%;
+    background-color:rgb(218, 214, 214);
+    text-align: center;
+}
+
+#what-is-a-public-adjuster-section h1 {
+    padding: 20px 0 0 0;
+    text-shadow: 2px 2px darkolivegreen
+}
+
 #services-section {
     min-height: 480px;
     background-color: white;
@@ -108,25 +132,6 @@ body {
     width: 100%;
     text-decoration: none;
     color: black;
-}
-
-#services-section .column h3 {
-    font-size: 16px;
-}
-
-#services-section h1 {
-    color: black;
-    font-weight: bold;
-    margin: auto;
-    font-size: 60px;
-    padding: 50px 0 50px 0;
-}
-
-#what-is-a-public-adjuster-section {
-    height: 400px;
-    width: 100%;
-    background-color:rgb(218, 214, 214);
-    text-align: center;
 }
 
 .public-blue {
