@@ -1,16 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 h1 {
     letter-spacing: .8px;
     font-family: 'Roboto', sans-serif;
     font-size: 48px;
 }
 
-#main-section h1 {
+#main-section {
+    min-height: calc(100vh - 300px);
+    width: 100%;
+    background-color: white;
+    margin: auto;
+    padding: 50px 0 0 0;
+    display: block;
+}
+
+#lets-get-started {
+    margin: auto;
+    width: auto;
     text-align: center;
-    letter-spacing: .8px;
+    padding-top: 15vh;
+}
+
+#lets-get-started a {
+    margin: auto;
+    width: 100%;
+    text-decoration: none;
     font-family: 'Roboto', sans-serif;
-    color: rgb(43, 43, 43);
-    padding: 0 10px 0 0;
-    font-size: 48px;
+    font-weight: bold;
+    background-color: rgb(0,174,239);
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    text-shadow: 1px 1px grey;
 }
 
 #main-section h3 {
@@ -18,8 +43,12 @@ h1 {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: rgb(43, 43, 43);
-    text-shadow:2px 2px rgb(148, 147, 147);
-    top: 50%;
+    text-shadow:1px 1px rgb(148, 147, 147);
+    top: 60%;
+}
+
+#main-section-text {
+    margin-top: 10vh;
 }
 
 
@@ -35,7 +64,7 @@ body {
 
 #myText {
     color: rgb(0,174,239);
-    text-shadow:2px 2px rgb(121, 120, 120);
+    text-shadow:1px 1px rgb(121, 120, 120);
 
 }
 
@@ -50,15 +79,6 @@ body {
     clear: both;
 }
 
-#main-section {
-    min-height: 350px;
-    width: 100%;
-    background-color: white;
-    margin: auto;
-    padding: 50px 0 0 0;
-    display: block;
-}
-
 #services-section {
     min-height: 480px;
     background-color: white;
@@ -69,7 +89,7 @@ body {
 
 #button-wrap-div {
     height: auto;
-    width: 800px;
+    width: auto;
     margin: 0 auto;
     background-color: white;
     padding: 10px;
@@ -83,8 +103,8 @@ body {
 
 .column {
     flex-basis: 100%;
-    background-color: white;
     height: 150px;
+    width: 100%;
     margin: 10px;
 }
 
@@ -105,7 +125,7 @@ body {
 
 .services-button {
     height: 100%;
-    width: 100%;
+    width: 100px;
     text-decoration: none;
     color: black;
 }
@@ -123,11 +143,16 @@ body {
 }
 
 #what-is-a-public-adjuster-section {
-    height: 400px;
+    height: 80vh;
     width: 100%;
-    background-color:rgb(218, 214, 214);
+    background-color:rgb(245, 245, 245);
     text-align: center;
 }
+
+#what-is-a-public-adjuster-section h1 {
+    padding-top: 50px;
+}
+
 
 .public-blue {
     color: rgb(0,174,239);
@@ -137,12 +162,70 @@ body {
     width: 100%;
 }
 
-
-@media screen and (max-width:479px) {
+/* Resize screen for mobile media with a max width of 479px */
+@media screen and (max-width:768px) {
     #main-section h3,
     #main-section h1 {
     font-size: 24px;
-}
+    }
+
+    #main-section {
+        height: calc(100vh - 50px);
+        width: 100%;
+        background-color: white;
+        margin: auto;
+        padding: 50px 0 0 0;
+        display: block;
+    }
+
+    #main-section-text {
+        margin-top: 0;
+    }
+
+    /* Services Section resize */
+    .column {
+        flex-basis: 100%;
+        background-color: white;
+        height: 150px;
+        margin: 5px;
+    }
+
+    .column-image {
+        height: 75px;
+        width: 75px;
+        border: black solid 1px;
+        position: relative;
+        margin: auto;
+    }
+
+    .column-title {
+        width: 100px;
+        background-color: white;
+        text-align: center;
+        position: relative;
+        margin: auto;
+    }
+    #services-section .column h3 {
+        font-size: 12px;
+    }
+    
+    #services-section h1 {
+        color: black;
+        font-weight: bold;
+        margin: auto;
+        font-size: 60px;
+        padding: 10px 0 10px 0;
+    }
+    #services-section {
+        min-height: 200px;
+        background-color: white;
+        color: black;
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    /* What is a Public Adjuster Section Resize */
+
 }
 
 @media screen and (min-width: 800px) {

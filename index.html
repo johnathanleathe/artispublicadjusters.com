@@ -53,7 +53,7 @@
             <div id="navbar-wrap">
                 <!-- Navigation Bar -->
                 <div class="navbar-wrap">
-                        <ul>
+                        <ul id="nav">
                             <li>
                                 <a href="index.html" class="active">Home</a>
                             </li>
@@ -76,6 +76,18 @@
                                 <a href="#" class="">Contact</a>
                             </li>
                         </ul>
+                        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+                        <script type="text/javascript">
+                            $("#nav").addClass("js").before('<div id="menu">&#9776;</div>');
+                            $("#menu").click(function(){
+                                $("#nav").toggle();
+                            });
+                            $(window).resize(function(){
+                                if(window.innerWidth > 768) {
+                                    $("#nav").removeAttr("style");
+                                }
+                            });
+                        </script>
                 </div>
             </div>
         </div>
@@ -86,11 +98,13 @@
         
 
         <!-- Inner text with Typewriter animation -->
-        <div> 
+        <div id='main-section-text'> 
             <h3>We <a id="myText"></a>insurance claims for <br>home and business owners.</h3>
         </div>
     
-        
+        <!-- Let Us Help Contact Button -->
+        <div id='lets-get-started'><a href='#'>Let&#39;s Get Started</a></div>
+
         <!-- Typewriter JS for main section text -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.17.0/core.min.js"></script>
@@ -129,7 +143,7 @@
 
     <!-- What is a Public Adjuster Section -->
     <div id='what-is-a-public-adjuster-section'>
-        <h1>What is a <a class='public-blue'>Public</a> Adjuster?</h1>
+        <h1>Expert Methods. Consistent Results.</h1>
     </div>
 
 
@@ -173,6 +187,7 @@
     
         </div>   
     </div>
+
 <!-- End entire page wrap -->
 </div>
 

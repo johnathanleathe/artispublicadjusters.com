@@ -2,7 +2,7 @@
     background-color: white;
     min-height: 120px;
     padding-top: 40px;
-    height: 220px;
+    height: auto;
     overflow: visible;
     width: 100%;
 }
@@ -12,8 +12,7 @@
     top: 0;
     height: 40px;
     width: 100%;
-    background-color: gray;
-
+    background-color: white;
 }
 
 #header .wrap {
@@ -42,6 +41,7 @@
     margin: 0;
     font-family: 'Roboto', sans-serif;
     overflow: visible;
+    width: 100%;
 }
 
 .navbar-wrap {
@@ -182,3 +182,48 @@
 .dropdown:hover .dropdown-content {display:block;}
 
 .dropdown:hover .dropbtn {background-color: lightgray;}
+
+@media screen and (max-width: 768px) {
+    #menu {
+        width:1.4em;
+        display: block;
+        background:#fff;
+        font-size:1.5em;
+        text-align: center;
+        margin: auto;
+        cursor: pointer;
+    }
+    #nav.js {
+        display: none;
+    }
+    ul {
+        width:100%;
+    }
+    li {
+        width:100%;
+        border:none;
+        background-color: transparent;
+    }
+
+    #navbar-wrap li a.active {
+        border-bottom: none;
+    }
+
+    .main-logo {
+        height: 100px;
+        width: auto;
+        left: 0;
+        right: 0;
+        display: block;
+    }
+    .main-logo img {
+        height: 50px;
+        padding: 2px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #menu {
+        display: none;
+    }
+}
