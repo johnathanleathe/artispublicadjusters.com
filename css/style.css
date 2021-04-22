@@ -79,6 +79,29 @@ body {
     clear: both;
 }
 
+#services-section .column h3 {
+    font-size: 16px;
+}
+
+#services-section h1 {
+    color: black;
+    font-weight: bold;
+    margin: auto;
+    font-size: 60px;
+    padding: 50px 0 50px 0;
+}
+
+#what-is-a-public-adjuster-section {
+    height: 80vh;
+    width: 100%;
+    background-color:rgb(245, 245, 245);
+    text-align: center;
+}
+
+#what-is-a-public-adjuster-section h1 {
+    padding-top: 50px;
+}
+
 #services-section {
     min-height: 480px;
     background-color: white;
@@ -129,30 +152,6 @@ body {
     text-decoration: none;
     color: black;
 }
-
-#services-section .column h3 {
-    font-size: 16px;
-}
-
-#services-section h1 {
-    color: black;
-    font-weight: bold;
-    margin: auto;
-    font-size: 60px;
-    padding: 50px 0 50px 0;
-}
-
-#what-is-a-public-adjuster-section {
-    height: 80vh;
-    width: 100%;
-    background-color:rgb(245, 245, 245);
-    text-align: center;
-}
-
-#what-is-a-public-adjuster-section h1 {
-    padding-top: 50px;
-}
-
 
 .public-blue {
     color: rgb(0,174,239);
