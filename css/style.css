@@ -3,26 +3,27 @@
     padding: 0;
 }
 
-h1 {
-    letter-spacing: .8px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 48px;
+html {
+    font-size: calc(0.6em + 1vw);
 }
 
 #main-section {
-    min-height: calc(100vh - 300px);
+    font-size: 1rem;
+    height: calc(100vh - 300px);
+    min-height: 15em;
     width: 100%;
     background-color: white;
     margin: auto;
-    padding: 50px 0 0 0;
+    padding: 2.5em 0 0 0;
     display: block;
 }
 
 #lets-get-started {
+    font-size: .7rem;
     margin: auto;
     width: auto;
     text-align: center;
-    padding-top: 15vh;
+    padding-top: 5em;
 }
 
 #lets-get-started a {
@@ -32,39 +33,38 @@ h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     background-color: rgb(0,174,239);
-    color: white;
-    padding: 10px 20px 10px 20px;
-    border-radius: 5px;
-    text-shadow: 1px 1px grey;
+    color: #fff;
+    padding: .6em 1.5em .6em 1.5em;
+    border-radius: .5em;
 }
 
 #main-section h3 {
-    font-size: 40px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: rgb(43, 43, 43);
-    text-shadow:1px 1px rgb(148, 147, 147);
+    text-shadow:.01em .01em rgb(148, 147, 147);
     top: 60%;
 }
 
 #main-section-text {
+    font-size: 1.6rem;
     margin-top: 10vh;
 }
 
 
 body {
+    font-size: 1rem;
     margin: 0;
     padding: 0;
     font-family: 'open_sansregular';
     background-color: #ffffff;
-    font-size: 16px;
     line-height: 1.7;
     font-family: 'Roboto', sans-serif;
 }
 
 #myText {
     color: rgb(0,174,239);
-    text-shadow:1px 1px rgb(121, 120, 120);
+    text-shadow: .03em .03em rgb(121, 120, 120);
 
 }
 
@@ -79,37 +79,31 @@ body {
     clear: both;
 }
 
-#services-section .column h3 {
-    font-size: 16px;
+
+#section-two {
+    font-size: 1rem;
+    height: auto;
+    width: 100%;
+    background-color:rgb(245, 245, 245);
+    text-align: center;
+    padding: 10em 0 10em 0;
+}
+
+#services-section {
+    font-size: 1rem;
+    min-height: 480px;
+    background-color: white;
+    color: black;
+    width: 100%;
 }
 
 #services-section h1 {
     color: black;
     font-weight: bold;
     margin: auto;
-    font-size: 60px;
-    padding: 50px 0 50px 0;
+    padding: 3em 0 3em 0;
 }
 
-#section-two {
-    height: auto;
-    width: 100%;
-    background-color:rgb(245, 245, 245);
-    text-align: center;
-    padding: 100px 0 100px 0;
-}
-
-#section-two h2 {
-    font-size: 30px;
-}
-
-#services-section {
-    min-height: 480px;
-    background-color: white;
-    color: black;
-    width: 100%;
-    padding-top: 50px;
-}
 
 #button-wrap-div {
     height: auto;
@@ -158,17 +152,29 @@ body {
 }
 
 .column {
+    font-size: 1rem;
     flex-basis: 100%;
     height: 100%;
     width: 100%;
-    margin: 10px;
+    margin: .2em;
+    padding: .5em;
+    background-color: white;
+    border-radius: 1em;
+}
+
+.column:hover {
+    color: white;
+}
+
+.column.services {
+    height: 10em;
 }
 
 .column-image {
     height: auto;
     width: auto;
     position: relative;
-    margin: auto;
+    margin: 20px auto 20px auto;
     text-align: center;
 }
 
@@ -180,27 +186,35 @@ body {
 
 .services-button {
     text-decoration: none;
-    color: black;
     text-align: center;
+    color: darkslategray;
 }
 
-#services-button {
-    width: auto;
-    height: 125px;
-    background-color: gray;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-#services-button:hover {
+.column.services:hover {
     background-color: lightgray;
     color: rgb(0,174,239);
+}
+
+.services-button h6:hover {
+    color: white;
+    text-shadow:rgb(121, 120, 120) .03em .03em;
 }
 
 .column-title {
     width: auto;
     margin: auto;
     text-align: center;
+}
+
+.section-title {
+    width: 100%;
+    text-align: center;
+}
+
+.section-title h1 {
+    margin: auto;
+    position: relative;
+    color: white;
 }
 
 .public-blue {
@@ -212,7 +226,7 @@ body {
 }
 
 /* Resize screen for mobile media with a max width of 479px */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     #main-section h3,
     #main-section h1 {
     font-size: 24px;
@@ -239,7 +253,6 @@ body {
         font-size: 20px;
     }
 
-    /* Services Section resize */
     .column {
         flex-basis: 100%;
         background-color: white;
@@ -247,14 +260,18 @@ body {
         margin: 5px;
     }
 
-    .material-icons.services-icon { font-size: 48px; }
+    .column.services {
+        height: auto;
+    }
+
+    .material-icons.services-icon { font-size: 60px; }
 
     .column-image {
         height: 50px;
         width: 50px;
         position: relative;
         margin: auto;
-        padding: 5px;
+        padding: 20px;
     }
 
     .column-title {
@@ -272,7 +289,7 @@ body {
         color: black;
         font-weight: bold;
         margin: auto;
-        font-size: 60px;
+        font-size: 30px;
         padding: 10px 0 10px 0;
     }
     #services-section {
@@ -283,10 +300,8 @@ body {
         padding-top: 20px;
     }
 
-    /* What is a Public Adjuster Section Resize */
-
 }
-
+*/
 @media screen and (min-width: 800px) {
     .column {
         flex: 1;

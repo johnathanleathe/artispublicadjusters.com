@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<!-- 
+    
+    Home Page of Artis Public Adjusters, Inc.
+    Lovingly hand coded by Johnathan Leathe, founder and current president of Artis Public Adjusters
+
+-->
+
+<!-- Title -->
+<title>Artis Public Adjusters, Inc. | Property Claim Experts</title>
+
+<!-- Stylesheets -->
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+
+<!-- Body -->
+<body>
+
+
+
+<!-- Entire page wrap -->
+<div id="wrap">
+
+    <!-- Above header bar for telephone number and contact info -->
+    <div id="top-div">
+        
+    </div>
+
+    <!-- Header -->
+    <div id="header">
+        <div class="wrap">
+
+            <!-- Logo -->
+            <div id="header_left">
+                <div>
+                    <div>
+                        <div>
+                            <div class="main-logo">
+                                <a href="https://artispublicadjusters.com/" title="Artis Public Adjusters">
+                                    <img src="images/artis-logo-black-blue.png">
+                                </a>
+                                <div id="under-artis-logo">
+                                    <p class="under-artis-logo">Artis <a class="public-blue">Public</a> Adjusters, Inc.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+
+            <div id="navbar-wrap">
+                <!-- Navigation Bar -->
+                <div class="navbar-wrap">
+                        <ul id="nav">
+                            <li>
+                                <a href="artis-public-adjusters-home.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="https://www.google.com/search?q=artis+public+adjusters&source=hp&ei=TC5_YIKHG5mxtQbVt4SAAw&gs_ssp=eJzj4tVP1zc0zKgyTzE1ySo2YLRSNaiwsDBIMzA3TUtMM0xJtrQwtzKoME02NE5NMjRJNEwzNTMzTvISSywqySxWKChNyslMVkhMySotLkktKgYAa40X-A&oq=artis+public&gs_lcp=ChFtb2JpbGUtZ3dzLXdpei1ocBABGAAyCwguEMcBEK8BEJMCMgYIABAWEB4yCAgAEBYQChAeMgYIABAWEB4yBggAEBYQHjIFCCEQoAE6CAgAEOoCEI8BOggIABCxAxCDAToICC4QsQMQgwE6BQgAELEDOgsILhCxAxDHARCjAjoICC4QsQMQkwI6BQguELEDOgIIADoICC4QxwEQowI6CAguEMcBEK8BOgcIABCxAxAKOgQIABAKUOkYWLw-YPlnaAFwAHgAgAF-iAHkB5IBBDExLjGYAQCgAQGwAQ8&sclient=mobile-gws-wiz-hp#lrd=0x880f075faf1dc987:0x5c13eb14a1f5663b,1,,,&wptab=s:H4sIAAAAAAAAAONgVuLVT9c3NMyoMk8xNckqfsTozS3w8sc9YSmnSWtOXmO04eIKzsgvd80rySypFNLjYoOyVLgEpVB1ajBI8XOhCvHsYuL3yU9OzAnIzwxKLctMLS9exGqYWFSSWaxQUJqUk5mskJiSVVpcklpUrKOQmZesp5CUk5-fm5mXnpKYk6pQBNEDAFezD7GlAAAA
+                                " class="">Reviews</a>
+                            </li>
+                            <li class="dropdown">
+                                <div class="dropbtn">Services</div>
+                                <div class="dropdown-content">
+                                    <a href="appraisal.html" class="">Appraisal & Umpire Services</a>
+                                    <a href="residential-property-claims-adjusting.html" class="">Residential Claims</a>
+                                    <a href="commercial-property-claim-adjusting.html" class="active">Commercial Claims</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="">Contact</a>
+                            </li>
+                        </ul>
+                        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+                        <script type="text/javascript">
+                            $("#nav").addClass("js").before('<div id="menu">&#9776;</div>');
+                            $("#menu").click(function(){
+                                $("#nav").toggle();
+                            });
+                            $(window).resize(function(){
+                                if(window.innerWidth > 768) {
+                                    $("#nav").removeAttr("style");
+                                }
+                            });
+                        </script>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    <!-- Main Page Section -->
+    <section id="main-section">
+        
+
+        <!-- Inner text with Typewriter animation -->
+        <div id='main-section-text'> 
+            <h3>We <a id="myText"></a>insurance claims for <br>home and business owners.</h3>
+        </div>
+    
+        <!-- Let's Get Started' Contact Button -->
+        <div id='lets-get-started'><a href='#'>Show Us Your Claim</a></div>
+
+        <!-- Typewriter JS for main section text -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.17.0/core.min.js"></script>
+
+        <script>
+            
+            // Create variable from element from the document
+            var text = document.getElementById('myText');
+
+            // Loop through Typewriter script
+            var typewriter = new Typewriter(text, {
+                loop: true
+            });
+
+            //Type different services offered for claims with Typewriter script
+            typewriter.typeString('investigate')
+                .pauseFor(1000)
+                .deleteAll()
+                .typeString('document')
+                .pauseFor(1000)
+                .deleteAll()
+                .typeString('prepare')
+                .pauseFor(1000)
+                .deleteAll()
+                .typeString('negotiate')
+                .pauseFor(1000)
+                .deleteAll()
+                .typeString('settle')
+                .pauseFor(1000)
+                .start();
+
+
+        </script>
+    
+    </section>
+
+    <!-- What is a Public Adjuster Section -->
+    <section id='section-two'>
+        <h1>What Kind of Claims?</h1>
+        <h2>Property claims.</h2>
+    </section>
+
+
+    <!-- Services Section -->
+    <section id="services-section">
+        
+        <!-- Services Title -->
+        <div class='section-title'>
+            <h1>Services We Offer</h1>
+        </div>
+
+
+        <!-- Wrap Flex Box for Services buttons -->
+        <div id="button-wrap-div">
+            
+            <!-- Flex Row -->
+            <div class="row">
+
+                <!-- Buttons for Services -->
+                <!-- Commercial Claims Button -->
+                <div class="column services">
+
+                    <!-- Anchor tag acts as button with link -->
+                    
+                    <a class='services-button' href='commercial-property-claim-adjusting.html'>
+                            <!-- Image above title -->
+                            <div class="column-image">
+                                <span class="material-icons services-icon">apartment</span>
+                            </div>
+                            <!-- Button title -->
+                            <div class="column-title"><h6>Commercial Claims Adjusting</h6></div>
+                    </a>
+                    
+                </div>
+
+                <!-- Residential Claims Button -->
+                <div class="column services">
+                    <a class='services-button' href='residential-property-claims-adjusting.html'>
+                            <div class="column-image">
+                                <span class="material-icons services-icon">house</span>
+                            </div>
+                            <div class="column-title"><h6>Residential Claims Adjusting</h6></div>
+                    </a>
+                </div>
+
+                <!-- Appraisal and Umpire Services Button -->
+                <div class="column services">
+                    <a class='services-button' href='#'>
+                            <div class="column-image">
+                                <span class="material-icons services-icon">gavel</span>
+                            </div>
+                            <div class="column-title"><h6>Insurance Appraisal & Umpire Services</h6></div>
+                    </a>
+                </div>
+
+                <!-- Consulting for Professionals Button -->
+                <div class="column services">
+                    <a class='services-button' href='#'>
+                        <div class="column-image">
+                            <span class="material-icons services-icon">work</span>
+                        </div>
+                        <div class="column-title"><h6>Claims Consulting for Professionals</h6></div>                    
+                    </a>
+                </div>
+
+                <!-- Pre Loss Services Button -->
+                <div class="column services">
+                    <a class='services-button' href='#'>
+                        <div class="column-image">
+                            <span class="material-icons services-icon">camera_indoor</span>
+                        </div>
+                        <div class="column-title"><h6>Pre-Loss Preparation</h6></div>                    
+                    </a>
+                </div>
+
+            </div>
+    
+        </div>   
+    </section>
+
+<!-- Div at the bottom of the page that contains the copyright -->
+
+
+<!-- End entire page wrap -->
+</div>
+
+</body>
+</html>
