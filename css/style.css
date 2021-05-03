@@ -9,7 +9,7 @@ html {
 
 #main-section {
     font-size: 1rem;
-    height: calc(100vh - 300px);
+    height: calc(100vh - 10em);
     min-height: 15em;
     width: 100%;
     background-color: white;
@@ -91,7 +91,7 @@ body {
 
 #services-section {
     font-size: 1rem;
-    min-height: 480px;
+    min-height: 20em;
     background-color: white;
     color: black;
     width: 100%;
@@ -117,7 +117,7 @@ body {
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
+    font-size: 2em;  /* Preferred icon size */
     display: inline-block;
     line-height: 1;
     text-transform: none;
@@ -138,28 +138,29 @@ body {
     font-feature-settings: 'liga';
 }
 
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
-.material-icons.services-icon { font-size: 60px; }
+.material-icons.services-icon { 
+    font-size: 2em; 
+}
 
 .row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-bottom: 20px;
+    justify-content: center;
 }
 
 .column {
-    font-size: 1rem;
+    font-size: 1.3rem;
     flex-basis: 100%;
+    flex: 1;
     height: 100%;
     width: 100%;
+    max-width: 33%;
     margin: .2em;
     padding: .5em;
     background-color: white;
     border-radius: 1em;
+    justify-self: center;
 }
 
 .column:hover {
@@ -167,14 +168,14 @@ body {
 }
 
 .column.services {
-    height: 10em;
+    height: auto;
 }
 
 .column-image {
     height: auto;
     width: auto;
     position: relative;
-    margin: 20px auto 20px auto;
+    margin: .05em auto .05em auto;
     text-align: center;
 }
 
@@ -187,12 +188,11 @@ body {
 .services-button {
     text-decoration: none;
     text-align: center;
-    color: darkslategray;
+    color: black;
 }
 
 .column.services:hover {
     background-color: lightgray;
-    color: rgb(0,174,239);
 }
 
 .services-button h6:hover {
@@ -225,83 +225,6 @@ body {
     width: 100%;
 }
 
-/* Resize screen for mobile media with a max width of 479px */
-/* @media screen and (max-width:768px) {
-    #main-section h3,
-    #main-section h1 {
-    font-size: 24px;
-    }
-
-    #main-section {
-        height: calc(100vh - 50px);
-        width: 100%;
-        background-color: white;
-        margin: auto;
-        padding: 50px 0 0 0;
-        display: block;
-    }
-
-    #main-section-text {
-        margin-top: 0;
-    }
-
-    #section-two h1 {
-        font-size: 30px;
-    }
-
-    #section-two h2 {
-        font-size: 20px;
-    }
-
-    .column {
-        flex-basis: 100%;
-        background-color: white;
-        height: auto;
-        margin: 5px;
-    }
-
-    .column.services {
-        height: auto;
-    }
-
-    .material-icons.services-icon { font-size: 60px; }
-
-    .column-image {
-        height: 50px;
-        width: 50px;
-        position: relative;
-        margin: auto;
-        padding: 20px;
-    }
-
-    .column-title {
-        width: 100px;
-        background-color: white;
-        text-align: center;
-        position: relative;
-        margin: auto;
-    }
-    #services-section .column h3 {
-        font-size: 12px;
-    }
-    
-    #services-section h1 {
-        color: black;
-        font-weight: bold;
-        margin: auto;
-        font-size: 30px;
-        padding: 10px 0 10px 0;
-    }
-    #services-section {
-        min-height: 200px;
-        background-color: white;
-        color: black;
-        width: 100%;
-        padding-top: 20px;
-    }
-
-}
-*/
 @media screen and (min-width: 800px) {
     .column {
         flex: 1;
