@@ -8,8 +8,8 @@ html {
 }
 
 footer {
-    background-color: rgb(0,174,239);
-    border-top:rgb(43, 43, 43) solid .5em;
+    background-color: white;
+    border-top:rgb(43, 43, 43) solid .1em;
     height: 2em;
     width: 100%;
 }
@@ -25,7 +25,7 @@ footer {
     display: block;
 }
 
-#lets-get-started {
+.cta-contact-us-button {
     font-size: .7rem;
     margin: auto;
     width: auto;
@@ -33,13 +33,13 @@ footer {
     padding-top: 5em;
 }
 
-#lets-get-started a {
+.cta-contact-us-button a {
     margin: auto;
     width: 100%;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    background-color: rgb(0,174,239);
+    background-color: rgb(179, 179, 179);
     color: #fff;
     padding: .6em 1.5em .6em 1.5em;
     border-radius: .5em;
@@ -156,13 +156,13 @@ body {
 }
 
 .column {
-    font-size: 1.3rem;
+    font-size: 1rem;
     flex-basis: 100%;
     flex: 1;
     height: 100%;
     width: 100%;
     max-width: 20%;
-    margin: .5em;
+    margin: .2em;
     background-color: white;
     border-radius: 1em;
     justify-self: center;
